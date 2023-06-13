@@ -62,4 +62,13 @@ async presentAlertMultilpeButtonAction() {
   });
   await alert.present();
   };
+  async mostrarMensaje() {
+    const alert = await this.alertCtrl.create({
+      header: 'Mensaje',
+      message: '¡Has hecho clic en el botón !',
+      buttons: ['Aceptar']
+    });
+
+    await alert.present();
+  }
 }
